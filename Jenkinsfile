@@ -1,1 +1,24 @@
+pipeline{
+   agent any
+
+  stages{
+    stage('checkout'){
+    steps{
+       echo 'source code is available from github'
+      }
+    }
+    stage('Build'){
+       steps{
+         echo 'build stage  running'
+       }
+      }
+    stage('Test'){
+        steps{
+            echo 'Test stage running'
+         }
+       }
+    }
+ }
+
+  
 
